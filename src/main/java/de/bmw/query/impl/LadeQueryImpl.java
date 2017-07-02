@@ -20,12 +20,12 @@ public class LadeQueryImpl implements LadeQuery {
 		this.items = ImmutableList.copyOf(items);
 	}
 
-	public LogicalOperator lade(String keyword) {
+	public IntermediateQuery lade(String keyword) {
 		this.items = ImmutableList.<QueryItem>builder()
 				.addAll(this.items)
 				.add(new Lade(keyword))
 				.build();
-		return new LogicalOperatorImpl(items);
+		return new IntermediateQueryImpl(items);
 	}
 	
 	public List<QueryItem> items() {

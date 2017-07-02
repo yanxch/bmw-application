@@ -19,15 +19,12 @@ interface CvQueryBuilder extends Query {
 interface CvQuery extends Query {}
 
 interface LadeQuery extends Query {
-	LogicalOperator lade(String keyword);
+	IntermediateQuery lade(String keyword);
 }
 
 interface VonQuery extends Query {
 	CvQuery von(String resource);
 }
 
-interface LogicalOperator extends Query {
-	QueryIntermediate and();
-}
+interface IntermediateQuery extends LadeQuery, VonQuery {}
 
-interface QueryIntermediate extends LadeQuery, VonQuery {}

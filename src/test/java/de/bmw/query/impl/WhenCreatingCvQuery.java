@@ -7,9 +7,8 @@ import static org.hamcrest.Matchers.is;
 import static org.hamcrest.Matchers.not;
 import static org.hamcrest.Matchers.hasItem;
 
-
-
 import org.junit.Test;
+
 /**
  * 
  * @author chrisyanx
@@ -26,9 +25,9 @@ public class WhenCreatingCvQuery {
 		
 		// When 
 		 CvQuery query = queryBuilder.create()
-			.lade("vorname").and()
-			.lade("nachname").and()
-			.lade("telefonnummer").and()
+			.lade("vorname")
+			.lade("nachname")
+			.lade("telefonnummer")
 			.von("Christian.Janker");
 		
 		// Then
@@ -42,9 +41,9 @@ public class WhenCreatingCvQuery {
 		 
 		// When 
 		 CvQuery query = queryBuilder.create()
-			.lade("vorname").and()
-			.lade("nachname").and()
-			.lade("telefonnummer").and()
+			.lade("vorname")
+			.lade("nachname")
+			.lade("telefonnummer")
 			.von("Christian.Janker");
 		
 		// Then
@@ -60,9 +59,9 @@ public class WhenCreatingCvQuery {
 		 
 		// When 
 		 CvQuery query = queryBuilder.create()
-			.lade("vorname").and()
-			.lade("nachname").and()
-			.lade("telefonnummer").and()
+			.lade("vorname")
+			.lade("nachname")
+			.lade("telefonnummer")
 			.von("Christian.Janker");
 		
 		// Then
