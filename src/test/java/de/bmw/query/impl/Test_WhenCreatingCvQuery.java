@@ -14,7 +14,7 @@ import org.junit.Test;
  * @author chrisyanx
  *
  */
-public class WhenCreatingCvQuery {
+public class Test_WhenCreatingCvQuery {
 	
 	// SUT
 	CvQueryBuilderImpl queryBuilder = CvQueryBuilderImpl.of();
