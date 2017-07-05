@@ -16,6 +16,7 @@
 
 	<modules>
 		<module>bmw-application-domain</module>
+		<module>bmw-application-domain-api</module>
 	</modules>
 
 </project>

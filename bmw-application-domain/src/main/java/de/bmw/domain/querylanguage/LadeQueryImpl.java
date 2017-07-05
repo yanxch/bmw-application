@@ -1,10 +1,12 @@
-package de.bmw.query.impl;
+package de.bmw.domain.querylanguage;
 
 import java.util.Collection;
 import java.util.List;
 
 import com.google.common.collect.ImmutableList;
 
+import de.bmw.domain.querylanguage.IntermediateQuery;
+import de.bmw.domain.querylanguage.LadeQuery;
 import de.bmw.query.QueryItem;
 
 /**

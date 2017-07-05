@@ -2,9 +2,13 @@
 	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
 	<modelVersion>4.0.0</modelVersion>
 
-	<groupId>de.bmw.application</groupId>
+	<parent>
+		<groupId>de.bmw.application</groupId>
+		<artifactId>bmw-application</artifactId>
+		<version>0.0.1-SNAPSHOT</version>
+	</parent>
+	
 	<artifactId>bmw-application-domain</artifactId>
-	<version>0.0.1-SNAPSHOT</version>
 	<packaging>jar</packaging>
 
 	<name>bmw-application-domain</name>
@@ -21,7 +25,12 @@
 			<version>22.0</version>
 		</dependency>
 
-
+		<dependency>
+			<groupId>de.bmw.application</groupId>	
+			<artifactId>bmw-application-domain-api</artifactId>
+			<version>${project.version}</version>
+		</dependency>
+		
 		<!-- Test Dependecies -->
 		<dependency>
 			<groupId>junit</groupId>

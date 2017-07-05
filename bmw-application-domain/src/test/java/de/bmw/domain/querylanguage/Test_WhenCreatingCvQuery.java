@@ -1,4 +1,4 @@
-package de.bmw.query.impl;
+package de.bmw.domain.querylanguage;
 
 import static org.hamcrest.MatcherAssert.assertThat;
 import static org.hamcrest.Matchers.hasSize;
@@ -8,6 +8,11 @@ import static org.hamcrest.Matchers.not;
 import static org.hamcrest.Matchers.hasItem;
 
 import org.junit.Test;
+
+import de.bmw.domain.querylanguage.CvQuery;
+import de.bmw.domain.querylanguage.CvQueryBuilderImpl;
+import de.bmw.domain.querylanguage.Lade;
+import de.bmw.domain.querylanguage.Von;
 
 /**
  * 

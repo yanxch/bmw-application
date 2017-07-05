@@ -1,4 +1,4 @@
-package de.bmw.query.impl;
+package de.bmw.domain.querylanguage;
 
 import de.bmw.query.Query;
 
