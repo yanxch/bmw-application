@@ -32,7 +32,7 @@ OPERATORPOSTFIX
 			| '*"'
 			;
  
-
+ 
 
 
 WORD:	[a-zA-Z]+ ;
